@@ -1,0 +1,61 @@
+{
+  "name": "react-url-search-params",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Asad13/react-url-search-params#readme",
+  "description": "A zero-dependency, type-safe library for managing URL query parameters in React with schema-based validation. It includes a built-in schema generator, eliminating the need for external validation libraries like Zod or Yup. Query parameter changes automatically create a new entry in the browser history, ensuring seamless navigation.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Asad13/react-url-search-params"
+  },
+  "author": {
+    "name": "Asad Mujumder",
+    "email": "asaduzzaman.anik.me@gmail.com",
+    "url": "https://asad13.github.io"
+  },
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs"
+  },
+  "keywords": [
+    "react",
+    "urlsearchparams",
+    "searchparams",
+    "params"
+  ],
+  "engines": {
+    "node": ">=10",
+    "pnpm": ">=10"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rollup": "^4.34.8",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  }
+}

@@ -93,7 +93,7 @@ export const useUrlSearchParams = <T extends UrlSearchParamsType>(
     const params = new URLSearchParams();
 
     Object.entries(values).forEach(([key, value]) => {
-      params.set(key, `${value}`);
+      if (value !== '') params.set(key, `${value}`);
     });
 
     if (params.size > 0) {
